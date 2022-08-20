@@ -18,7 +18,7 @@ try
     .UseSerilog()
     .ConfigureServices(services =>
     {
-        //Define the smtp for FluentEmail
+        //Define the smtp for FluentEmail. The environmental variables needs to be defined first
         var smtpHost = Environment.GetEnvironmentVariable("SMTP_HOST");
         var smtpUser = Environment.GetEnvironmentVariable("SMTP_USER");
         var smtpPass = Environment.GetEnvironmentVariable("SMTP_PASS");
